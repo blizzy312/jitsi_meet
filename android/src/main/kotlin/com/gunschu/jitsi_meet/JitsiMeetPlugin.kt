@@ -138,6 +138,7 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
                 .setVideoMuted(call.argument("videoMuted") ?: false)
                 .setUserInfo(userInfo)
                 .setFeatureFlag("pip.enabled",false)
+                .setFeatureFlag("call-integration.enabled", false)
                 .build()
 
         JitsiMeetPluginActivity.launchActivity(activity, options)
