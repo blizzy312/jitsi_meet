@@ -139,6 +139,7 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
                 .setUserInfo(userInfo)
                 .setFeatureFlag("pip.enabled",false)
                 .setFeatureFlag("call-integration.enabled", false)
+                .setFeatureFlag("invite.enabled", false)
                 .build()
 
         JitsiMeetPluginActivity.launchActivity(activity, options)
