@@ -39,6 +39,8 @@ public class JitsiViewPlatformViewFactory extends PlatformViewFactory {
                     .setAudioMuted(getBoolValue(map.get("audioMuted")))
                     .setAudioOnly(getBoolValue(map.get("audioOnly")))
                     .setVideoMuted(getBoolValue("videoMuted"))
+                    .setFeatureFlag("pip.enabled", false)
+                    .setFeatureFlag("invite.enabled", false)
                     .setUserInfo(jitsiMeetUserInfo)
                     .build();
         }
